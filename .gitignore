@@ -1,4 +1,4 @@
-accounts.db
+*.db
 .idea/
 
 # Byte-compiled / optimized / DLL files
