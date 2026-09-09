@@ -1,24 +1,3 @@
-https://www.udemy.com/course/the-complete-agentic-ai-engineering-course
-https://github.com/ed-donner/agents
-
 uv sync
 uv run uvicorn backend.api:app --port 8000
-cd /home/rishabh/workspace/ai-tutorials/latest/agents-latest/6_mcp && uv run -m backend.trading_floor
-
-
-uv run ./2_openai/deep_research/deep_research.py
-
-uv pip install 'crewai[tools]'
-cd /home/rishabh/workspace/ai-tutorials/agents/3_crew/debate && crewai run
-cd /home/rishabh/workspace/ai-tutorials/agents/3_crew/financial_researcher && crewai run
-cd /home/rishabh/workspace/ai-tutorials/agents/3_crew/stock_picker && crewai run
-cd /home/rishabh/workspace/ai-tutorials/agents/3_crew/coder && crewai run
-cd /home/rishabh/workspace/ai-tutorials/agents/3_crew/engineering_team && crewai run
-cd /home/rishabh/workspace/ai-tutorials/agents/6_mcp/ && uv run app.py
-
-crewai create crew debate
-cd
-
-uv pip install 'crewai[tools]'
-PYTHONPATH=/home/rishabh/workspace/ai-tutorials/agents/ python -m 3_crew.debate.src.debate.crew
-PYTHONPATH=/home/rishabh/workspace/ai-tutorials/agents/ python -m 3_crew.stock_picker.src.stock_picker.crew
+uv run -m backend.trading_floor
